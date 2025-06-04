@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Bug, Rat, SprayCan as Spray, Fish, Bird, BedDouble as Needle, ChevronLeft, ChevronRight } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import TransitionText from '../components/TransitionText';
@@ -80,13 +80,19 @@ const ServicesSection: React.FC = () => {
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 3 }
             }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+            }}
+            loop={true}
             className="services-slider"
           >
             {services.map((service, index) => (
