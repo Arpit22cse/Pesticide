@@ -3,9 +3,6 @@ import { motion } from 'framer-motion';
 import TransitionText from '../components/TransitionText';
 
 const ApproachSection: React.FC = () => {
-  // The 'steps' array is no longer needed as we're using a paragraph
-  // const steps = [...]
-
   return (
     <section id="approach" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,13 +28,12 @@ const ApproachSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="max-w-3xl mx-auto"
           >
-            <p className="text-gray-600 text-lg">
-              At PestPros, our approach to pest management is rooted in a deep understanding of pest behavior and environmental factors. We begin with a **meticulous inspection** to uncover the root cause of your pest issues and identify all potential entry points. This detailed assessment forms the basis of a **customized treatment plan**, specifically designed for your property's unique needs. Our skilled technicians then execute this plan using **cutting-edge, eco-friendly methods** that are highly effective yet safe for your family and pets. We don't just eliminate existing pests; we establish robust **prevention strategies** and offer **ongoing monitoring and follow-up** to ensure long-term protection, transforming your space into a consistently pest-free environment.
+            {/* Enhanced paragraph styling for readability */}
+            <p className="text-gray-700 text-lg leading-relaxed px-4 md:px-8">
+              At PestPros, our approach to pest management is rooted in a deep understanding of pest behavior and environmental factors. We begin with a <strong className="text-primary-dark">meticulous inspection</strong> to uncover the root cause of your pest issues and identify all potential entry points. This detailed assessment forms the basis of a <strong className="text-primary-dark">customized treatment plan</strong>, specifically designed for your property's unique needs. Our skilled technicians then execute this plan using <strong className="text-primary-dark">cutting-edge, eco-friendly methods</strong> that are highly effective yet safe for your family and pets. We don't just eliminate existing pests; we establish robust <strong className="text-primary-dark">prevention strategies</strong> and offer <strong className="text-primary-dark">ongoing monitoring and follow-up</strong> to ensure long-term protection, transforming your space into a consistently pest-free environment.
             </p>
           </motion.div>
         </div>
-
-        {/* Removed the connection line and step rendering as they are no longer relevant */}
       </div>
     </section>
   );
