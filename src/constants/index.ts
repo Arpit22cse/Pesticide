@@ -29,41 +29,30 @@ export const NAV_ITEMS: NavItem[] = [
 export const SERVICES: Service[] = [
   {
     id: 1,
-    title: "Residential Pest Control",
-    description: "Comprehensive pest management solutions to keep your home pest-free and your family safe.",
-    icon: "home",
+    title: "Termite Treatment",
+    description: "Specialized termite inspection, prevention, and treatment to protect your property from damage.",
+    icon: "bug", // Assuming 'bug' icon for termites
   },
   {
     id: 2,
-    title: "Commercial Pest Control",
-    description: "Tailored pest control programs for businesses, ensuring compliance and protecting your reputation.",
-    icon: "building-2",
+    title: "Rodent Control",
+    description: "Effective rodent removal and prevention strategies to keep mice and rats away from your property.",
+    icon: "mouse", // 'mouse' icon for rodents
   },
   {
     id: 3,
-    title: "Termite Treatment",
-    description: "Specialized termite inspection, prevention, and treatment to protect your property from damage.",
-    icon: "bug",
+    title: "Beehive Removal",
+    description: "Safe and humane removal of beehives and nests, preventing stings and structural damage.",
+    icon: "bee", // Assuming 'bee' or similar icon for beehives
   },
   {
     id: 4,
-    title: "Rodent Control",
-    description: "Effective rodent removal and prevention strategies to keep mice and rats away from your property.",
-    icon: "mouse",
-  },
-  {
-    id: 5,
     title: "Mosquito Control",
     description: "Targeted treatments to reduce mosquito populations and create a more comfortable outdoor environment.",
-    icon: "zap",
-  },
-  {
-    id: 6,
-    title: "Bed Bug Elimination",
-    description: "Comprehensive bed bug detection and elimination services using the latest techniques.",
-    icon: "bed",
+    icon: "zap", // 'zap' icon for mosquitoes
   },
 ];
+
 
 export const TESTIMONIALS: Testimonial[] = [
   {

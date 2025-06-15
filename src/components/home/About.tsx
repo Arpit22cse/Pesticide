@@ -9,14 +9,13 @@ const About: React.FC = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Pestside</h2>
           <p className="text-gray-300 mb-6">
-            At Pestside, we've been protecting homes and businesses from unwanted pests for over 15 years. 
-            Our team of certified pest control experts is dedicated to providing safe, effective, and 
-            environmentally responsible solutions for all your pest management needs.
+           At PestPros, we redefine pest control with precision, professionalism, and performance. 
+           We take pride in being the only service provider offering odorless treatments, 
+           ensuring complete comfort with zero disruption. Whether it's termites, rodents, 
+           or concealed infestations — we don’t just treat, we transform your space. 
           </p>
           <p className="text-gray-300 mb-8">
-            We understand that every pest situation is unique, which is why we take a customized approach 
-            to each client. Our comprehensive inspections, targeted treatments, and preventative strategies 
-            ensure long-lasting results that you can trust.
+            Trusted across sectors and driven by a commitment to excellence, PestPros isn’t just a service — it’s a new industry standard.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

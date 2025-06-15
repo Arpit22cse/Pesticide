@@ -1,39 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Shield, ThumbsUp, Award, Leaf, Headphones } from 'lucide-react';
 import TransitionText from '../components/TransitionText';
+import { History, Users, ShieldCheck, Trophy, CloudOff } from 'lucide-react';
 
 const WhyChooseUsSection: React.FC = () => {
   const reasons = [
     {
-      icon: <Clock size={28} />,
-      title: 'Fast Response',
-      description: 'We respond quickly to all service requests, often providing same-day or next-day service.'
+      icon: <History size={28} />, // Icon for expertise
+      title: 'Over Two Decades of Expertise',
+      description: 'Harnessing 20+ years of industry mastery to guarantee excellence.'
     },
     {
-      icon: <Shield size={28} />,
-      title: 'Guaranteed Results',
-      description: 'We stand behind our work with a 100% satisfaction guarantee on all services.'
+      icon: <Users size={28} />, // Icon for skilled technicians
+      title: 'Highly Skilled Technicians',
+      description: 'Our professionals are committed to swift, precise, and effective solutions.'
     },
     {
-      icon: <ThumbsUp size={28} />,
-      title: 'Experienced Team',
-      description: 'Our technicians have years of experience and receive ongoing training.'
+      icon: <ShieldCheck size={28} />, // Icon for warranty
+      title: 'Comprehensive One-Year Warranty',
+      description: 'Pests return within a year? We’ll promptly retreat your space at no extra cost.'
     },
     {
-      icon: <Award size={28} />,
-      title: 'Licensed & Insured',
-      description: 'We are fully licensed and insured for your complete protection and peace of mind.'
+      icon: <Trophy size={28} />, // Icon for proven track record
+      title: 'Proven Track Record',
+      description: 'Trusted by a diverse clientele for delivering consistent, superior results.'
     },
     {
-      icon: <Leaf size={28} />,
-      title: 'Eco-Friendly',
-      description: 'We use environmentally responsible products that are safe for your family and pets.'
-    },
-    {
-      icon: <Headphones size={28} />,
-      title: '24/7 Support',
-      description: 'Our customer support team is available around the clock to assist you.'
+      icon: <CloudOff size={28} />, // Changed icon for odorless treatments
+      title: 'Odorless Treatments',
+      description: 'Delivering discreet, chemical-free pest control for unparalleled comfort.'
     }
   ];
 

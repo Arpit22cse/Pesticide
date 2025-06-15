@@ -29,8 +29,15 @@ const AboutSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="max-w-3xl mx-auto"
           >
-            <p className="text-gray-600 text-lg">
-              With over 15 years of experience, we provide effective and environmentally responsible pest control solutions for homes and businesses.
+            <p className="text-gray-600 text-lg mb-6">
+              At PestPros, we redefine pest control with precision, professionalism, and performance. 
+              We take pride in being the only service provider offering odorless treatments, 
+              ensuring complete comfort with zero disruption. Whether it's termites, rodents, 
+              or concealed infestations — we don’t just treat, we transform your space. 
+            </p>
+
+            <p className="text-gray-600 text-2xl font-semibold">
+              Trusted across sectors and driven by a commitment to excellence, PestPros isn’t just a service — it’s a new industry standard.
             </p>
           </motion.div>
         </div>

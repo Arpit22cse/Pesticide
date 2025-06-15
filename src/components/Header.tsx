@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2">
           <Bug size={28} className={isScrolled ? 'text-secondary' : 'text-primary'} />
-          <span className="text-xl font-heading font-bold">PestGuard</span>
+          <span className="text-xl font-heading font-bold">PestPros</span>
         </a>
 
         {/* Desktop Navigation */}

@@ -7,6 +7,7 @@ interface BlogSectionProps {
   title: string;
   subtitle: string;
   category: string;
+  paragraph: string,
   imageSrc: string;
   reverse?: boolean;
 }
@@ -15,7 +16,8 @@ const BlogSection: React.FC<BlogSectionProps> = ({
   id, 
   title, 
   subtitle, 
-  category, 
+  category,
+  paragraph, 
   imageSrc, 
   reverse = false 
 }) => {
@@ -68,7 +70,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, velit vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.
+                {paragraph}
               </p>
               
               <ul className="mb-8 space-y-2">
