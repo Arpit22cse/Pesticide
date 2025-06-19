@@ -56,12 +56,6 @@ const HeroSection: React.FC = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a 
-                href="#contact" 
-                className="px-8 py-3 bg-primary text-white rounded-md font-medium hover:bg-gray-800 transition-colors shadow-md"
-              >
-                Get Free Inspection
-              </a>
-              <a 
                 href="#services" 
                 className="px-8 py-3 border border-gray-300 text-primary rounded-md font-medium hover:bg-gray-100 transition-colors"
               >

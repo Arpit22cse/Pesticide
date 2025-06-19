@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Bug, Rat, SprayCan as Spray, Fish, Bird, BedDouble as Needle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Bug, Rat, SprayCan as Spray, BedDouble as Needle, ChevronLeft, ChevronRight } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import TransitionText from '../components/TransitionText';
+import { Link } from 'react-router-dom';
 
 const ServicesSection: React.FC = () => {
   const swiperRef = useRef<any>(null);
@@ -32,16 +33,7 @@ const ServicesSection: React.FC = () => {
       title: 'Mosquito Control',
       description: 'Reduce mosquito populations and create a more comfortable outdoor environment.'
     },
-    {
-      icon: <Bird size={24} />,
-      title: 'Bird Control',
-      description: 'Humane solutions to prevent birds from damaging your property.'
-    },
-    {
-      icon: <Fish size={24} />,
-      title: 'Wildlife Removal',
-      description: 'Safe and humane removal of unwanted wildlife from your property.'
-    }
+
   ];
 
   return (
@@ -125,15 +117,15 @@ const ServicesSection: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 text-center"
         >
-          <a 
-            href="#" 
-            className="inline-flex items-center text-primary font-medium hover:underline"
-          >
+            <Link
+            to="/services"
+            className="inline-flex items-center text-primary font-medium hover:underline focus:outline-none"
+            >
             View All Services
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
             </svg>
-          </a>
+            </Link>
         </motion.div>
       </div>
     </section>
