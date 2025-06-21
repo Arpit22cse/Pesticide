@@ -77,7 +77,7 @@ const AboutSection: React.FC = () => {
           ))}
         </div>
         
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -88,9 +88,9 @@ const AboutSection: React.FC = () => {
             href="#contact" 
             className="px-8 py-3 bg-primary text-white rounded-md font-medium hover:bg-gray-800 transition-colors shadow-md"
           >
-            Schedule a Free Inspection
+            Book Our Services
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
